@@ -1,0 +1,23 @@
+<?php
+	$data = $this->getRiviyoData();
+
+	if ($data)
+	{
+?>
+<script type="application/ld+json">
+    {
+    "@context": "http://schema.org/",
+    "@type": "Website",
+    "name": "<?php echo $data['magento_data']['website_name'] ?>",
+    "description": ".",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "<?php echo $data['riviyo_data']->general->avg ?>",
+        "bestRating":   "10",
+        "ratingCount": "<?php echo $data['riviyo_data']->general->total ?>"
+    	}
+    }
+</script>
+<?php
+	}
+?>
