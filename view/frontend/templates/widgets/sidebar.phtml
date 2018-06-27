@@ -1,0 +1,23 @@
+<?php
+	$data = $this->getRiviyoData();
+
+	if ($data)
+	{
+
+?>
+
+
+<div class="riviyo-widget">
+	<div class="widget-title">
+		<h3><?php echo __('Riviyo beoordelingen') ?></h3>
+	</div>
+	<div class="widget-content">
+		<?php echo __('Cijfer') ?>: <?php echo $data['riviyo_data']->general->avg ?><br />
+		<?php echo __('Aantal stemmen'); ?>: <?php echo $data['riviyo_data']->general->total ?><br />
+		<?php echo __('Riviyo pagina') ?>: <a href="<?php echo $data['riviyo_data']->general->company_page_url; ?>"><?php echo $data['riviyo_data']->general->company_page_url; ?></a>
+	</div>
+</div>
+
+<?php
+	}
+?>
