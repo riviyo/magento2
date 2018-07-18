@@ -4,11 +4,11 @@
   "keywords": ["riviyo","reviews","magento","magento 2"],
   "homepage": "https://github.com/riviyo/magento2",
   "type": "magento2-module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "require": {
     "php": ">=7.1.0",
-    "magento/framework": ">=100.0.4"
+    "vrolijkonline/core": "~0.1.0"
   },
   "authors": [
     {

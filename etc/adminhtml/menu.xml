@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+
+    	<add id="Vrolijkonline_Riviyo::menuroot"
+             title="Riviyo settings"
+             module="Vrolijkonline_Riviyo"
+             sortOrder="0"
+             action="adminhtml/system_config/edit/riviyo/general"
+             parent="Vrolijkonline_Core::root"
+             resource="Magento_Backend::content"
+             dependsOnModule="Vrolijkonline_Riviyo" />
+    </menu>
+</config>
