@@ -3,12 +3,20 @@
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
 
-    	<add id="Vrolijkonline_Riviyo::menuroot"
+        <add id="Vrolijkonline_Riviyo::menuroot"
+             title="Riviyo"
+             module="Vrolijkonline_Riviyo"
+             sortOrder="0"
+             parent="Vrolijkonline_Core::root"
+             resource="Magento_Backend::content"
+             dependsOnModule="Vrolijkonline_Core" />
+
+    	<add id="Vrolijkonline_Riviyo::menusettings"
              title="Riviyo settings"
              module="Vrolijkonline_Riviyo"
              sortOrder="0"
              action="adminhtml/system_config/edit/riviyo/general"
-             parent="Vrolijkonline_Core::root"
+             parent="Vrolijkonline_Riviyo::menuroot"
              resource="Magento_Backend::content"
              dependsOnModule="Vrolijkonline_Riviyo" />
     </menu>
